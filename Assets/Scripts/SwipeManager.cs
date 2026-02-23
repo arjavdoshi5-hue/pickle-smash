@@ -11,8 +11,18 @@ public class SwipeManager : MonoBehaviour
     private Vector2 startTouchPosition;
     private float startTime;
 
+    void Start()
+    {
+        Debug.Log("--- SWIPE MANAGER IS AWAKE ---");
+    }
+
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("--- MOUSE CLICK DETECTED ---");
+        }
+
         // 1. Mouse Input (For Editor Testing)
         if (Input.GetMouseButtonDown(0))
         {
