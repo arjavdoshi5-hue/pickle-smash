@@ -18,6 +18,7 @@ public class SwipeManager : MonoBehaviour
         {
             startTouchPosition = Input.mousePosition;
             startTime = Time.time;
+            Debug.Log("Swipe Started");
         }
         else if (Input.GetMouseButtonUp(0))
         {
